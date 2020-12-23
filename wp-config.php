@@ -20,25 +20,22 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', $_SERVER['RDS_DB_NAME'] );
+define( 'DB_NAME', 'extdb' );
 
 /** MySQL database username */
-define( 'DB_USER', $_SERVER['RDS_USERNAME'] );
+define( 'DB_USER', 'admin' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', $_SERVER['RDS_PASSWORD'] );
+define( 'DB_PASSWORD', '123456789' );
 
 /** MySQL hostname */
-define( 'DB_HOST', $_SERVER['RDS_HOSTNAME'] . ':' . $_SERVER['RDS_PORT'] );
+define( 'DB_HOST', 'externaldb.ctnxgrpbuzln.ap-south-1.rds.amazonaws.com:3306' );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
 
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
-
-
-define('WP_REDIS_HOST', $_SERVER['REDIS_HOST'] . ':' . $_SERVER['REDIS_PORT']);
 
 /**#@+
  * Authentication Unique Keys and Salts.
